@@ -1,0 +1,212 @@
+html,
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#map {
+    /* background-image:url("https://www.miamiandbeaches.com/App_Themes/Miami/Images/svg-bg-palms.jpg") ; */
+    /* background: linear-gradient (0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)); */
+    /* transition:cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* display: -webkit-flex; */
+    /* background:linear-gradient(0deg, #ff0000, rgba(255, 0, 150, 0.3)), url(https://www.miamiandbeaches.com/App_Themes/Miami/Images/svg-bg-palms.jpg);
+    background-size:cover; */
+
+    background-color: White;
+    height: 698px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+
+}
+
+.btn-home {
+    z-index: 50;
+}
+
+.popupCustom .leaflet-popup-content-wrapper {
+    background-color: crimson;
+    font-family: "Sofia", sans-serif;
+    color: White;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 0px;
+
+    animation: mymove 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+
+
+
+@keyframes mymove {
+    from {
+        background-color: crimson;
+    }
+
+    to {
+        background-color: black;
+    }
+}
+
+/* .sidebar{
+    background: #fdecf9;
+    color: #a61919;
+    width: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 0px;
+} */
+
+.popupCustom .leaflet-popup-content-wrapper a {
+    color: White;
+}
+
+.popupCustom .leaflet-popup-tip-container {
+    width: 125px;
+    height: 12px;
+}
+
+.popupCustom .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* .nb-footer {
+    position: relative;
+    padding: 12px 15px 45px;
+    overflow-y: auto;
+} */
+
+.nb-cards .nb-card.active {
+    -webkit-box-shadow: 0 0 8px 1px rgb(0 0 0 / 40%);
+    box-shadow: 0 0 8px 1px rgb(0 0 0 / 40%);
+    -webkit-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+}
+
+.nb-cards .nb-card {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #222;
+    -webkit-transition: all .2s ease-in-out 0ms;
+    -o-transition: all .2s ease-in-out 0ms;
+    transition: all .2s ease-in-out 0ms;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 100vh;
+    max-width: 430px;
+}
+
+#sidebar {
+    border: 5px;
+    border-style: groove;
+    background-color: #FEFBF3;
+    top: 50px;
+    position: sticky;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px;
+    max-width: 490px;
+    /* max-height: auto; */
+    font-size: 16px;
+    color: azure;
+}
+
+
+
+
+.image-style {
+    background-color: slategray;
+    image-orientation: landscape;
+    /* max-width:250px;
+    max-height: 250px; */
+    width: 100%;
+    height: auto;
+}
+
+
+
+.name-header {
+    margin-right: 1px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: White;
+    font-weight: bold;
+    background-color: crimson;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.desc {
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+    /* height:150px;
+    width:100%; */
+    background-color: #222;
+}
+
+.footer {
+    padding-top: 0px;
+    background-color: crimson;
+    max-width: 450px;
+    height: auto;
+    text-align: center;
+    padding-right: 0;
+}
+
+
+
+.leaflet-container a {
+    font-size: 22px;
+    font-style: bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#close-button-span {
+
+    /* background-color: #FFDE00; */
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 38px;
+    height: 38px;
+    border-color: crimson;
+    background-color:crimson;
+    background-image: url("../Images/CloseButtonpng.png");
+    background-repeat: no-repeat;
+    border-style: none;
+    /* color: #ffffff;
+    font-size: 25px;
+    line-height: 1em;
+    text-align: center; */
+    /* background: rgb(253, 230, 20); */
+    /* -webkit-border-radius: 16px;
+    border-radius: 16px; */
+    cursor: pointer;
+    /* z-index: 50; */
+}
