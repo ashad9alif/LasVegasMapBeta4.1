@@ -17,7 +17,7 @@ body {
     background-size:cover; */
 
     background-color: White;
-    height: 698px;
+    height: 710px;
     width: auto;
     position: absolute;
     right: 0;
@@ -33,8 +33,8 @@ body {
 }
 
 .popupCustom .leaflet-popup-content-wrapper {
-    width:0px;
-    height:0px;
+    width: 0px;
+    height: 0px;
     background-color: transparent;
     font-family: "Helvetica", sans-serif;
     color: White;
@@ -215,9 +215,50 @@ body {
 
 
 .label-tooltip {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(240, 239, 234, 0.5);
     border: none;
     box-shadow: none;
     color: black;
-    padding: 2px 4px;
+    font-size: 18px;
+    text-decoration: bold;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+}
+
+
+
+.label-tooltip-Arrows {
+    background-color: rgba(240, 239, 234, 0);
+    border: none;
+    box-shadow: none;
+    color: black;
+    font-size: 14px;
+    text-decoration: bold;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.label-tooltip-Canyon {
+    background-color: rgba(240, 239, 234, 0);
+    border: none;
+    box-shadow: none;
+    color: black;
+    font-size: 16px;
+    font-weight: none;
+    font-style: italic;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.label-tooltip-Lake {
+    background-color: rgba(240, 239, 234, 0);
+    border: none;
+    box-shadow: none;
+    color: black;
+    font-size: 18px;
+    text-decoration: bold;
+    font-weight: none;
+    font-style: italic;
+    padding: 5px 5px 5px 5px;
 }

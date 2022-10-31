@@ -45,7 +45,7 @@ map.attributionControl.setPrefix('')
 //         color: 'white',
 //         dashArray: '1',
 //         opacity: 0.0,
- 
+
 //     };
 // }
 
@@ -177,8 +177,82 @@ function styleRoad(feature) {
         color: 'white',
         dashArray: '1',
         opacity: 0.0,
- 
+
     };
 }
 
 
+
+
+var myIcon95 = L.icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/I-95.svg/1200px-I-95.svg.png',
+    iconSize: [25, 25],
+});
+
+var myIcon215 = L.icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/I-215.svg/1200px-I-215.svg.png',
+    iconSize: [25, 25],
+});
+
+var myIcon15 = L.icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/I-15.svg/1200px-I-15.svg.png',
+    iconSize: [25, 25],
+});
+
+
+var marker_15_1 = L.marker([36.2895602, -115.0057936], {
+    icon: myIcon15,
+}).addTo(map);
+
+
+// 115.1346435°W 36.2027672°N 
+var marker_15_2 = L.marker([36.2027672, -115.1306435], {
+    icon: myIcon15,
+}
+).addTo(map);
+
+
+
+var marker_95_1 = L.marker([36.3170287, -115.3051647], {
+    icon: myIcon95,
+}
+).addTo(map);
+// 115.3051647°W 36.3170287°N 
+
+
+// 115.1775324°W 35.9937474°N 
+
+var marker_15_3 = L.marker([35.9937474, -115.1775324], {
+    icon: myIcon15,
+}
+).addTo(map);
+
+// 115.1958451°W 36.1734969°N 
+var marker_95_2 = L.marker([36.1734969, -115.1958451], {
+    icon: myIcon95,
+}
+).addTo(map);
+
+// 114.9472101°W 35.9993923°N 
+var marker_95_3 = L.marker([35.9993923, -114.9472101], {
+    icon: myIcon95,
+}
+).addTo(map);
+
+
+// 115.1278225°W 36.2937074°N 
+var marker_215_1 = L.marker([36.2937074, -115.1278225], {
+    icon: myIcon215,
+}).addTo(map);
+
+
+// 115.2906342°W 36.0898901°N 
+var marker_215_2 = L.marker([36.0898901, -115.2906342], {
+    icon: myIcon215,
+}).addTo(map);
+
+
+// 115.1323767°W 36.0441236°N 
+var marker_215_2 = L.marker([36.0441236, -115.1323767], {
+    icon: myIcon215,
+}).addTo(map);
