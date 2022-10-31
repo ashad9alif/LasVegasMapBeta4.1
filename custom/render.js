@@ -7,7 +7,7 @@ function onEachZone(feature, layer) {
 
  var popup = L.popup();
  console.log(feature.properties.Name);
- popup.setContent(feature.properties.Name);
+ popup.setContent(feature.properties.NAME);
  var popupOptions = {
      autoPan: false,
      closeButton: false,
@@ -38,13 +38,6 @@ function onEachZone(feature, layer) {
 
 
 
-
-
-
-
-
-
-
 layer.on('mouseout', function (e) {
     console.log('name',e.sourceTarget.feature.properties.Name)
     e.target.closePopup();
@@ -55,6 +48,20 @@ layer.on('mouseout', function (e) {
     });
 });
 
+
+
+
+layer.bindTooltip(layer.feature.properties.Name, {
+
+    permanent: true,
+
+    direction: "center",
+
+    opacity: 1,
+
+    className: 'label-tooltip'
+
+});
 
 
 
