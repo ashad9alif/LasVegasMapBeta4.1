@@ -22,9 +22,10 @@ map.attributionControl.setPrefix('')
 
 
 
-// L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png', {
-//     opacity: 0.9,
-//     // attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 19,
+//     opacity: 1,
+//     attribution: ''
 // }).addTo(map);
 
 
@@ -256,3 +257,14 @@ var marker_215_2 = L.marker([36.0898901, -115.2906342], {
 var marker_215_2 = L.marker([36.0441236, -115.1323767], {
     icon: myIcon215,
 }).addTo(map);
+
+
+// map.fitBounds(Zones.getBounds());
+// 114.8013974°W 35.8697877°N 
+
+
+
+// map.fitBounds([
+//     [115.4727116,36.4081456],
+//     [114.8013974,35.8697877]
+// ]);
