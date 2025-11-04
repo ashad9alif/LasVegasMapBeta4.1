@@ -21,14 +21,14 @@ map.attributionControl.setPrefix('')
 
 
 
+// Basemap visibility Activatiom ------------------------------------------------------------
 
-// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     maxZoom: 19,
-//     opacity: 1,
-//     attribution: ''
-// }).addTo(map);
-
-
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    opacity: 1,
+    attribution: ''
+}).addTo(map);
+// ------------------------------------------------------------------------------------------------
 
 
 
